@@ -1,0 +1,441 @@
+
+
+
+
+
+.content-container{
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Style the buttons inside the tab */
+
+/* bios and lang panels */
+
+.tab2  {
+
+
+        /* backdrop-filter: blur(23px) saturate(200%); */
+        /* -webkit-backdrop-filter: blur(23px) saturate(200%); */
+        /* background-color: rgba(184, 233, 134, 0.7); */
+        border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.3);
+background-color:#B0D99D;
+
+
+  /* background-color: #555; */
+
+z-index:40;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 13px;
+  font-size: 17px;
+
+height:1000px;
+}
+
+@media screen and (max-width: 950px) {
+
+
+ .tab2  {
+
+width: 30%;
+}
+
+}
+
+.tab2 button  {
+
+
+  width: 24%;
+}
+
+
+@media screen and (max-width: 950px) {
+  .tab2 button  {
+
+
+
+  }
+}
+
+
+
+/* Change background color of buttons on hover */
+.tab2 button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab2 button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent2 {
+overflow-y: scroll;
+  padding: 0px 0px;
+  /* border: 1px solid #ccc; */
+margin-top:0px;
+  border-left: none;
+border-radius: 25px;
+z-index:40;
+}
+
+
+/* width */
+.tabcontent2::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+.tabcontent2::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  /* border-radius: 10px; */
+
+ box-shadow: none;
+
+}
+
+/* Handle */
+.tabcontent2::-webkit-scrollbar-thumb {
+  background:#718046 ;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.tabcontent2::-webkit-scrollbar-thumb:hover {
+  background:  #ace600;
+}
+
+
+
+
+
+
+
+
+  .plantContainer{
+
+    margin: auto;
+     width: 50%;
+z-index:40;
+     padding: 10px;
+  }
+
+
+
+  /* Style the tab */
+  .tab {
+    /*float: left;*/
+    /*border: 1px solid #5A7836;*/
+    /*background-color: #ddd;*/
+    width: 30%;
+    height: 75%;
+z-index:40;
+
+  }
+
+
+/* @media screen and (max-width: 900px) {
+
+
+
+  }
+*/
+
+
+
+
+
+
+
+
+
+
+  /* Style the buttons inside the tab */
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 5% 10%;
+    width: 80%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+   border-left: 3.5px solid#849554;
+
+margin-left:10%;
+z-index:40;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover{
+  /*transform: scale(1.05);*/
+  /*outline: 2px solid#5A7836;*/
+
+
+
+
+
+
+   background-image: url("https://i.imgur.com/t96gXeE.png");
+  z-index:40;
+  background-repeat: no-repeat;
+   background-position: 0px 5px; /* Center the image */
+    background-size: 40px 40px;
+
+
+
+  }
+
+
+  /* Create an active/current "tab button" class */
+
+
+  .tab button.active1 {
+  /*  background-color: #ccc;*/
+/* animation: fadeInOut 4s linear forwards; */
+  transition: 2s ease-in;
+
+   border-bottom: 3.5px solid #718046;
+ border-radius: 0px 0px 60px 0px;
+  }
+
+
+  @media screen and (max-width: 750px) {
+
+    .tab {
+      /*float: left;*/
+      /*border: 1px solid #5A7836;*/
+      /*background-color: #ddd;*/
+      width: 100%;
+      height: 50%;
+margin-left:-15px;
+margin-top:-35px;
+    }
+
+}
+
+
+  img{
+z-index:40;
+border:none;
+  }
+
+/*centers tabs*/
+  .center {
+margin: auto;
+    width: 60%;
+    /* border: 1px solid #718046; */
+    padding: 1px;
+height: 75%
+
+
+/*
+margin: 20vh 20vw;
+  width: 40vw;
+  height: 40vh;
+  /*background: purple;
+  padding: 10vh 10vw;
+*/
+
+  }
+
+/*aligns tab content*/
+  .center2 {
+  /* margin: auto; */
+margin-top:-50%;
+    margin-left:30%;
+    width: 80%;
+    /* border: 3px solid #73AD21; */
+height:20%;
+display:block;
+}
+#mobileTabTitle{
+  display:none;
+}
+
+
+  @media screen and (max-width: 750px) {
+  .center2 {
+display:none;
+}
+
+#mobileTabTitle{
+  display:block;
+}
+
+
+
+}
+
+
+
+
+
+
+/*vertical-align: middle;
+  width: 50%;
+  display: inline-block;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0%;
+  margin: auto;
+*/
+
+
+
+  }
+
+
+
+/*
+.close-overlay{
+
+
+border:none;
+background:url("ImgUI/icon-x-circle_white.svg")no-repeat;
+}
+
+
+.close-overlay:hover{
+border:none;
+background: url("ImgUI/icon-x-circle_green.svg")no-repeat;
+} */
+
+
+
+  /* Style the tab content */
+
+
+/* the words of tab content */
+  .tabcontent {
+  /*margin-left: 5px;*/
+    /*float: left;*/
+
+
+
+
+display:block;
+    padding: 5% 2%;
+
+    width: 70%;
+    border: none;
+    height: 80vh;
+  }
+
+
+
+/* mobile mode for selected content */
+@media screen and (max-width: 750px) {
+
+  .tabcontent {
+  /*margin-left: 5px;*/
+    /*float: left;*/
+
+
+
+display:none;
+margin-top:50%;
+    padding: 5% 2%;
+/* margin-left:-50px; */
+    /* width: 100%; */
+    border: none;
+    /* height: 80vh; */
+  }
+
+
+  .center {
+margin: auto;
+    width: 90%;
+    /* border: 1px solid #718046; */
+    padding: 1px;
+height: 75%
+
+
+/*
+margin: 20vh 20vw;
+  width: 40vw;
+  height: 40vh;
+  /*background: purple;
+  padding: 10vh 10vw;
+*/
+
+  }
+
+
+
+
+
+
+
+
+}
+
+
+
+  #container {
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+
+
+
+  .elementToFadeInAndOut{
+     animation: fadeInOut 4s linear forwards;
+  }
+
+
+
+
+
+.elementToFadeInAndOut:hover
+      {
+        /* -moz-box-shadow: 0 0 10px #ccc; */
+        /* -webkit-box-shadow: 0 0 10px #ccc; */
+        /* box-shadow: 0 0 10px #ccc; */
+/* filter: drop-shadow(16px 16px 20px #FFFF); */
+
+Transform:scale(1.05);
+border-color: grey;
+cursor: pointer;
+      }
+
+      .elementToFadeInAndOut:active
+            {
+              -moz-box-shadow: 0 0 10px #ccc;
+              -webkit-box-shadow: 0 0 10px #ccc;
+              box-shadow: 0 0 10px #ccc;
+            }
+
+
+
+
+  @keyframes fadeInOut {
+   0% { opacity:0; }
+   100% { opacity:1; }
+
+  }
+
+
+
+}

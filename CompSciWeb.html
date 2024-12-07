@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Sorren Jao - Portfolio</title>
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <!-- <link rel="stylesheet" href="files/aos.css" > -->
+    <!-- <link rel="stylesheet" href="aos.css" > -->
+    <link  rel="stylesheet" media='screen and (min-width: 900px)' href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<!-- scrolling anime causes problems for mobile sandwich -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="project.css">
+      <link rel="stylesheet" href="form.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<!-- font awesome icons -->
+<script src="https://kit.fontawesome.com/0b0401bad6.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+	<script src="index.js"></script>
+  <header>
+
+
+    <div class="nav">
+   
+      <ul>
+        <li class="favicon"><a href="index.html" ><i class="fa-brands fa-envira" style="font-size:25pt;"></i></a></li>
+        <!-- <li class="turorial"><a href="#one">Tutorial</a></li> -->
+        <li ><a href="index.html#bio">
+        Bio</a></li>
+        <li ><a href="index.html#projects">Web</a></li>
+        <li ><a href="index.html#apps">Apps</a></li>
+        <li ><a href="#contact">Contact</a></li>
+
+      </ul>
+    </div>
+
+
+<!-- class="active" -->
+    <div class="topnav"style="z-index:2">
+  <a href="" ><i class="fa-brands fa-envira" style="font-size:24pt;"></i></a>
+      <div id="myLinks" >
+
+        <!-- <a href="#one">Tutorial</a> -->
+    
+      <a href="index.html#bio">Bio</a>
+      <li ><a href="index.html#projects">Web</a></li>
+      <li ><a href="index.html#apps">Apps</a></li>
+<a href="#contact">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" style="font-size:24pt"></i>
+      </a>
+    </div>
+
+
+
+
+
+
+
+  </header>
+  <br>  <br>  <br>  <br>
+  <a href="index.html#projects" >
+  <button class="button">	← Go Back </button></a>
+
+<div class="projectContainer">
+   <h1>CompsciJobs.com</h1>
+  <!-- <div class="site-title">
+     <h1>Project Container Template</h1>
+   </div> -->
+
+   <h2>Skills:</h2>
+             <p> <div class="tag">PHP</div>
+                <div class="tag">JavaScript</div>
+                  <div class="tag">jQuery</div>
+                  <div class="tag">SQL</div></p>
+   <div class="content">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZZr_WbdRTDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+     <p> CompsciJobs.com is a job search website that filters through computer science related jobs located in Canada. It uses SQL in conjunction with AJAX to populate results on the page. Users can also register to be a memeber on the website.</p>
+     <!-- <a href="https://www.smartdrivetest.com/" target="_blank">
+             <button class="button"> Visit Website → </button></a> -->
+
+       
+
+             <p>Computer-related jobs are a major industry in Canada, America, Asia, and around the world. As a School of Interactive Arts & Technology major intending to pursue these types of fields we proposed a minimalistic yet concise job search website that focuses on computer science-related jobs in Canada.
+           <br><br>
+           Users can search by job title, company, city, province, or by postdate. Company representatives such as hiring managers can also visit our website to post new jobs. Through the comment sections, users will be able to make any inquiries to the hiring manager in regards to the posted job position. Registered users gain an additional feature as they can bookmark any job position to look into later at the home page.
+           <br><br>
+           This was a group project and I was responsible for creating the user registration form, dataset and user authentication along with the jobs populating in the search results.
+                     </p></span>
+
+
+
+
+   
+
+
+
+
+<br>
+<h2>Process</h2>
+<p>The data types of our dataset include the posting ID (int), job title (text), company (text), city (text), province (text), salary range (text), postdate (int), summary (text) and the job url (text). We used all the mentioned data types for our website. Users can search by job title, company name, and can filter the city, province, and postdate by radio button. Once the user receives their results the user can then select an item to view the summary of the job.</p>
+
+<br>
+<h2>Entity Relation Diagram</h2>
+          <br>
+          <a href="ImgUI/entiy_diagram2.png" target="blank"> <img style= "width:100%; "src="ImgUI/entiy_diagram2.png"></img></a>
+          <p>The Member entity has four attributes: User_ID, email, password, and username. The User_ID is the primary key of each user. The username attribute is also unique to each member as they cannot have more than one account linked to their User_ID. Each user is able to set a password and username as they please. Users can have passwords and usernames that are identical to others’.
+          </p>
+
+          <p>The Job entity has eight attributes: Job_ID, company, province, city, salary, postdate, summary, and joburl. The primary key of the Job entity is the Job_ID. The company attribute is a foreign key that allows the employer to edit that job. All other purely details of the job.
+          </p>
+        <h2>Joblist table</h2>
+
+          <a href="ImgUI/joblist_table.png" target="blank"> <img style= "width:100%; "src="ImgUI/joblist_table.png"></img></a>
+          <br>
+          <p>Joblist table as seen in XAMPP's phpMyAdmin: This manages the database of Jobs along with the attributes: posting ID (int), job title (text), company (text), city (text), province (text), salary range (text), postdate (int), summary (text) and the job url (text).
+          </p>
+<br>
+          <h2>Back end data processing</h2>
+
+          <p>
+
+          For the backend of search queries, all the values submitted for search were collected, and tested if they were empty or not. If the values were not empty, the value would be passed into the query string. When this was done, the result was displayed.
+          </p>
+          <br>
+          <a href="ImgUI/backend_query.png" target="_blank"> <img style= "width:100%; "src="ImgUI/backend_query.png"></img></a>
+          <br>  <br>
+          <h2>Description of the front end dynamic support/ajax </h2>
+
+          <p>We used AJAX for two things in our website. For populating the list of search results, and for going through the pages of the search results.
+
+          For populating the search results, the PHP code we wrote  collected the search criteria for the  processing page. Then we used string concatenation to assemble the query, with the limit of results set to 10.
+          </p>
+          <br>
+          <a href="ImgUI/ajax1.png" target="_blank"> <img style= "width:100%; "src="ImgUI/ajax1.png"></img></a>
+          <br>
+          <p>For moving through the pages, the PHP sent the same search criteria, but the result starting value was set to +10, so each time the button is pressed, it will move the page forward.
+          </p>
+          <br><a href="ImgUI/ajax2.png" target="_blank"> <img style= "width:100%; "src="ImgUI/ajax2.png"></img></a><br>
+          <p>You can see the query building here </p>
+          <br><a href="ImgUI/ajax3.png" target="_blank"> <img style= "width:100%; "src="ImgUI/ajax3.png"></img></a><br>
+          <p>For going backward, it is similar. We reduced the number of the start post, but only if the post was greater than 10, so that the post start would not go into negative, throwing an error.
+          </p><br>
+          <a href="ImgUI/ajax4.png" target="_blank"> <img style= "width:100%; "src="ImgUI/ajax4.png"></img></a>
+
+                    </span>
+                    <h2>Final look</h2>
+                              <br>
+                  <a href="ImgUI/frontend_filtering.png" target="_blank"> <img style= "width:100%; "src="ImgUI/frontend_filtering.png"></img></a>
+
+                              <p> Guest filtering through joblist database.</p>
+                  <br>
+                  <a href="ImgUI/frontend_details.png" target="_blank"> <img style= "width:100%; "src="ImgUI/frontend_details.png"></img></a>
+                  <p> Guest selects a job to view more job summary.</p>
+                  <br>
+                  <a href="ImgUI/frontend_login.png" target="_blank"> <img style= "width:100%; "src="ImgUI/frontend_login.png"></img></a>
+                  <p> User logs in.</p>
+                  <br>
+                  <a href="ImgUI/frontend_register.png" target="_blank"> <img style= "width:100%; "src="ImgUI/frontend_register.png"></img></a>
+                  <p> User registers to be a member.</p>
+                  <br>
+                  <a href="ImgUI/frontend_members.png" target="_blank"> <img style= "width:100%; "src="ImgUI/frontend_members.png"></img></a>
+                  <p> User redirected to member area.</p>
+
+
+
+
+                              <h2>Reflection</h2>
+                              <p>
+                  Unfortunately due to time constraints, we were unable to fully implement the functions of creating a new job posting, bookmarking, and commenting. I hope to continue building on this idea to help provide fast and focused results for any user interested in pursuing these types of careers.
+                  </p>
+
+                  <br>
+
+                 
+
+                </div>
+
+
+</div>
+
+
+
+
+
+<br>
+
+
+
+<br>
+
+<!-- <h1 class="title_card" style=""><img style="width:15%" src="imgs/github.png" alt="github"></h1> -->
+<div id="contact" class="flex-container">
+  <div><img style="width:30%" src="imgs/github.png" alt="github"></img></div>
+  <div><br><a href="https://github.com/SorrenJ" target="_blank"><button class="button" style="">See Github for more projects.</button></a>
+
+
+
+</div>
+</div>
+
+
+
+
+<section class="section1">
+
+  <h1 class="title_card">  <br>Let's chat! <br>
+    <svg width="100%" height="59" viewBox="0 0 79 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M78.9481 4.02959V54.8203C78.9482 55.2967 78.8544 55.7686 78.6721 56.2088C78.4898 56.649 78.2226 57.049 77.8857 57.3859C77.5488 57.7228 77.1488 57.99 76.7086 58.1723C76.2684 58.3546 75.7966 58.4483 75.3201 58.4482H4.57592C4.09946 58.4483 3.62765 58.3546 3.18743 58.1723C2.74721 57.99 2.34721 57.7228 2.01031 57.3859C1.6734 57.049 1.4062 56.649 1.22393 56.2088C1.04166 55.7686 0.94792 55.2967 0.94805 54.8203V4.02959C0.945758 3.61455 1.01955 3.20261 1.16588 2.81421C1.38273 2.19441 1.76547 1.64596 2.27239 1.22858C2.77931 0.811194 3.39099 0.540875 4.04088 0.447021C4.21777 0.418045 4.39668 0.402876 4.57592 0.401672H75.3201C75.4994 0.402876 75.6782 0.418044 75.8551 0.447021C76.505 0.540806 77.1168 0.811108 77.6237 1.2285C78.1306 1.64589 78.5133 2.19437 78.7301 2.81421C78.8764 3.2026 78.9503 3.61454 78.9481 4.02959Z" fill="white"/>
+    <path d="M78.7302 2.81422L41.0272 30.8761C40.7167 31.1115 40.3377 31.2389 39.948 31.2389C39.5583 31.2389 39.1793 31.1115 38.8687 30.8761L1.16589 2.81422C1.38274 2.19442 1.76542 1.64597 2.27234 1.22859C2.77926 0.811209 3.391 0.54089 4.04089 0.447037L39.9481 27.1666L75.8551 0.447021C76.505 0.5408 77.1168 0.811106 77.6237 1.2285C78.1307 1.64589 78.5134 2.19438 78.7302 2.81422V2.81422Z" fill="#003358"/>
+    </svg>
+  </h1>
+
+
+<div class="formContainer">
+  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mvonpwkn" method="post">
+    <fieldset id="fs-frm-inputs">
+    <h1><label for="full-name">Full Name</label></h1>
+
+      <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+    <br>
+      <h1><label for="email-address">Email Address</label></h1>
+      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+<br>
+      <h1><label for="message">Message</label></h1>
+      <textarea rows="5" name="message" id="message" placeholder="Hello." required=""></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+    </fieldset>
+    <br>
+    <input class="button" type="submit" value="Submit"style="margin:auto;">
+  </form>
+
+</div>
+</section>
+
+
+
+
+
+<script>
+
+function bio1() {
+      document.getElementById("bio1").style.display = "block";
+document.getElementById("bio2").style.display = "none";
+document.getElementById("bio3").style.display = "none";
+
+
+}
+function bio2() {
+      document.getElementById("bio1").style.display = "none";
+document.getElementById("bio2").style.display = "block";
+document.getElementById("bio3").style.display = "none";
+
+
+}
+function bio3() {
+      document.getElementById("bio1").style.display = "none";
+document.getElementById("bio2").style.display = "none";
+document.getElementById("bio3").style.display = "block";
+
+
+}
+
+// hamburger menu
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
+
+<script src="../files/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+
+<!-- <canvas class="background"></canvas> -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
+  </body>
+</html>

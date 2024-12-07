@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+ /* background: #F8FFDB;  */
+/* background: white; */
+}
+
+nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+z-index:8;
+}
+
+nav a {
+  width: 4px;
+  height: 25px;
+  display: block;
+  background: gray;
+  background-clip: content-box;
+  padding: 0 7px;
+  border-radius: 45%;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+.vivid:nth-child(odd) {
+  background-color: #94AD29;
+}
+.vivid:nth-child(even) {
+  background-color: #94AD29;
+}
+
+section {
+  height: 100vh;
+}
+
+/*background color sections*/
+/*section:nth-child(even) {
+  background: #E9F8BE;
+}
+
+section:nth-child(odd) {
+  background:#E9F8BE;
+}
+*/

@@ -1,0 +1,96 @@
+/* to the body element */
+.noscroll { overflow: hidden; }
+
+@media (min-device-width: 1025px) {
+  .noscroll {
+      padding-right: 15px;
+  }
+}
+
+.overlayB {
+   position: fixed;
+   overflow-y: scroll;
+   top: 0; left: 0; top: 0; bottom: 0;
+}
+
+[aria-hidden="true"] {
+  transition: opacity 1s, z-index 0s 1s;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0;  }
+
+[aria-hidden="false"] {
+  transition: opacity 1s;
+  width: 100%;
+  z-index: 1;
+  opacity: 1;
+}
+
+
+
+
+/* this code is not strictly necessary: just to make this demo a bit pleasant */
+
+.overlayB div {
+   margin: 15vh auto;
+   width: 100%;
+   max-width: 650px;
+   padding: 30px;
+   max-height: 100%;
+   background: rgba(255,255,255, .95);
+/* background:  rgba(40,40,40, .75); */
+}
+.overlayB {
+background:#849554;
+
+/* background-image: url("ImgUI/ghibliMt.jpeg");
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+z-index:-2;
+top:0;
+width:100%; */
+
+
+
+/* background-size: 105% 100em;
+
+
+
+animation: mymove 10s alternate infinite; */
+
+
+}
+
+@keyframes mymove {
+  to {
+    background-position: top right;
+
+  }
+
+  from {
+    background-position: top left;
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+.hero-image {
+  background-size: 100% 100%;
+height:100%;
+width:100%;
+}
+}
+
+
+
+
+
+
+
+
+* { box-sizing: border-box; }
+button { padding: 1.5em 4em; cursor: pointer;}
+pre { background: #fafafa; padding: 15px; border: 1px #ccd dashed; }
+pre + p { margin: 5vh 0; }

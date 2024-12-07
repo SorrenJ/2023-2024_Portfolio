@@ -1,0 +1,94 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 300px;
+  background: url(https://i.imgur.com/9ewsT3r.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  color: white;
+  font-weight: 200;
+  border: 4px solid white;
+  display: box;
+  padding: 20px;
+  position: relative;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  background: grey;
+  padding: 10px;
+  position: relative;
+  background: linear-gradient(to bottom, #ffffff 0%,#f9f9f9 100%);
+  border-bottom: 1px solid #E0E0E0;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+
+.fixed {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.navigation h2 {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  color: #242424;
+  font-weight: 200;
+}
+
+.menu h2 {
+  width: 100%;
+  margin: 0;
+  color: #242424;
+  font-weight: 200;
+}
+
+.navigation img {
+  margin: 2px 0 0 4px;
+  display: box;
+}
+
+.content {
+  width: 100%;
+  padding: 20px;
+  background: white;
+  color: #2e2e2e;
+}
+
+.menu {
+  width: 80%;
+  left: -100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  background: linear-gradient(to bottom, #ffffff 0%,#f9f9f9 100%);
+  border-right: 1px solid #E0E0E0;
+  padding: 20px;
+}
+
+.slidein {
+  animation: slidein 500ms;
+  animation-fill-mode: forwards;
+}
+
+.slideout {
+  animation: slideout 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+  from{left: -100%;}
